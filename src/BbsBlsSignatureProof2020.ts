@@ -386,10 +386,6 @@ export class BbsBlsSignatureProof2020 extends suites.LinkedDataProof {
 
     const outputProof = output.proof;
 
-    console.log("------aaaaaaaaaaaaaaaaaa-----------");
-    console.log(revealDocumentResult);
-    console.log("-------aaaaaaaaaaaaaaaaaa----------");
-
     // Set the proof value on the derived proof
     derivedProof.proofValue = Buffer.from(outputProof).toString("base64");
 
@@ -403,6 +399,7 @@ export class BbsBlsSignatureProof2020 extends suites.LinkedDataProof {
       proof: derivedProof,
       challenge_hash: output.challenge_hash,
       hidden_messages: output.hidden_messages,
+      hidden_message_hash: output.hidden_message_hash,
       blinding_factors: output.blinding_factors,
       correct_commit: output.correct_commit,
     };

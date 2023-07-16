@@ -65,6 +65,7 @@ export const deriveProofWithOutput = async (
 
   let challenge_hash = derivedProof.challenge_hash;
   let hidden_messages = derivedProof.hidden_messages;
+  let hidden_message_hash = derivedProof.hidden_message_hash;
   let blinding_factors = derivedProof.blinding_factors;
   let correct_commit = derivedProof.correct_commit;
 
@@ -136,6 +137,7 @@ export const deriveProofWithOutput = async (
     derivedProof.document,
     challenge_hash,
     hidden_messages,
+    hidden_message_hash,
     blinding_factors,
     correct_commit,
   ];

@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@kskhasegawa/bbs-signatures@0.1.172", "@kskhasegawa/bbs-signatures@1.0.0":
-  version "0.1.172"
-  resolved "https://registry.yarnpkg.com/@kskhasegawa/bbs-signatures/-/bbs-signatures-0.1.172.tgz#613ae58da316f65f417294f5f574b52cf064de28"
-  integrity sha512-6MjiLN5n4rBP6WcS9WqTmvOaM6QSLwjaYvuPPsJ5ovkhemHcM1+/EzDNnw6pu40AwS1jcP18F9Na1jAkDjCXSQ==
+"@kskhasegawa/bbs-signatures@0.2.11", "@kskhasegawa/bbs-signatures@1.0.0":
+  version "0.2.11"
+  resolved "https://registry.yarnpkg.com/@kskhasegawa/bbs-signatures/-/bbs-signatures-0.2.11.tgz#23cc4cc64da5651632a3447d48c6450c65cfbcfa"
+  integrity sha512-goL8TMU/lTa8R85Y/NAibPk/LoIDVuJTKMra/OAn046luK4ukCFYiMykQ1fM52XPpnd6xnS3d0x3BAxoiuo16w==
   dependencies:
     "@stablelib/random" "1.0.2"
 
