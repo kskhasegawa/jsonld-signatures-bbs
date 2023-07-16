@@ -18,7 +18,7 @@ import {
   BbsBlsSignature2020,
   BbsBlsSignatureProof2020,
   deriveProof,
-} from "@mattrglobal/jsonld-signatures-bbs";
+} from "@kskhasegawa/jsonld-signatures-bbs";
 import { extendContextLoader, sign, verify, purposes } from "jsonld-signatures";
 
 import inputDocument from "./data/inputDocument.json";

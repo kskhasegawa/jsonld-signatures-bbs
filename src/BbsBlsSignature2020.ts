@@ -24,7 +24,7 @@ import {
   SuiteSignOptions,
 } from "./types";
 import { w3cDate } from "./utilities";
-import { Bls12381G2KeyPair } from "@mattrglobal/bls12381-key-pair";
+import { Bls12381G2KeyPair } from "@kskhasegawa/bls12381-key-pair";
 
 /**
  * A BBS+ signature suite for use with BLS12-381 key pairs

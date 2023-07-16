@@ -10,6 +10,12 @@
     "type": ["PermanentResident", "Person"],
     "givenName": {},
     "familyName": {},
-    "gender": {}
+    "gender": {},
+    "image": {},
+    "residentSince": {},
+    "lprCategory": {},
+    "lprNumber": {},
+    "commuterClassification": {},
+    "birthCountry": {}
   }
 }

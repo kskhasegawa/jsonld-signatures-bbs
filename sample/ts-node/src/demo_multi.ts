@@ -16,7 +16,8 @@ import {
   BbsBlsSignature2020,
   BbsBlsSignatureProof2020,
   deriveProof,
-} from "@mattrglobal/jsonld-signatures-bbs";
+  deriveProofWithOutput,
+} from "@kskhasegawa/jsonld-signatures-bbs";
 import { extendContextLoader, sign, verify, purposes } from "jsonld-signatures";
 
 import inputDocument from "./data/inputDocument.json";
@@ -99,10 +100,14 @@ const main = async (): Promise<void> => {
   console.log(JSON.stringify(verified, null, 2));
 
   //Derive a proof
-  const derivedProof = await deriveProof(multiSignedDocument, revealDocument, {
-    suite: new BbsBlsSignatureProof2020(),
-    documentLoader,
-  });
+  const derivedProof = await deriveProofWithOutput(
+    multiSignedDocument,
+    revealDocument,
+    {
+      suite: new BbsBlsSignatureProof2020(),
+      documentLoader,
+    }
+  );
 
   console.log("Derived Proof Result");
   console.log(JSON.stringify(derivedProof, null, 2));

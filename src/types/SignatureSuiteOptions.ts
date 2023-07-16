@@ -12,7 +12,7 @@
  */
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Bls12381G2KeyPair } from "@mattrglobal/bls12381-key-pair";
+import { Bls12381G2KeyPair } from "@kskhasegawa/bls12381-key-pair";
 import { KeyPairSigner } from "./KeyPairSigner";
 
 /**

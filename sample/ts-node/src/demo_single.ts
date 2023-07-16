@@ -16,7 +16,8 @@ import {
   BbsBlsSignature2020,
   BbsBlsSignatureProof2020,
   deriveProof,
-} from "@mattrglobal/jsonld-signatures-bbs";
+  deriveProofWithOutput,
+} from "@kskhasegawa/jsonld-signatures-bbs";
 import { extendContextLoader, sign, verify, purposes } from "jsonld-signatures";
 
 import inputDocument from "./data/inputDocument.json";
@@ -90,19 +91,38 @@ const main = async (): Promise<void> => {
   console.log(JSON.stringify(verified, null, 2));
 
   //Derive a proof
-  const derivedProof = await deriveProof(signedDocument, revealDocument, {
-    suite: new BbsBlsSignatureProof2020(),
-    documentLoader,
-  });
-
-  console.log(JSON.stringify(derivedProof, null, 2));
+  const derivedProof = await deriveProofWithOutput(
+    signedDocument,
+    revealDocument,
+    {
+      suite: new BbsBlsSignatureProof2020(),
+      documentLoader,
+    }
+  );
+  //derivedProof[0]: proof document
+  //derivedProof[1]: challenge hash
+  //derivedProof[2]: hidden message hash
+  //derivedProof[3]: blinding factors
+  //derivedProof[4]: correct commitments
+  console.log("challenge hash is--------------------------------");
+  console.log(derivedProof[0]);
+  console.log("--------------------------------");
 
   //Verify the derived proof
-  verified = await verify(derivedProof, {
+  verified = await verify(derivedProof[0], {
     suite: new BbsBlsSignatureProof2020(),
     purpose: new purposes.AssertionProofPurpose(),
     documentLoader,
   });
+
+  // console.log(JSON.stringify(derivedProof, null, 2));
+
+  // //Verify the derived proof
+  // verified = await verify(derivedProof, {
+  //   suite: new BbsBlsSignatureProof2020(),
+  //   purpose: new purposes.AssertionProofPurpose(),
+  //   documentLoader,
+  // });
 
   console.log("Verification result");
   console.log(JSON.stringify(verified, null, 2));

@@ -26,3 +26,4 @@ export { DidDocumentPublicKey } from "./DidDocumentPublicKey";
 export { GetProofsOptions } from "./GetProofsOptions";
 export { GetProofsResult } from "./GetProofsResult";
 export { GetTypeOptions } from "./GetTypeOptions";
+export { ProofResult } from "./ProofResult";
