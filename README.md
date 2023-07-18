@@ -1,19 +1,5 @@
-[![MATTR](./docs/assets/mattr-logo-square.svg)](https://github.com/mattrglobal)
-
-# jsonld-signatures-bbs
-
-![npm-version](https://badgen.net/npm/v/@mattrglobal/jsonld-signatures-bbs)
-![npm-unstable-version](https://badgen.net/npm/v/@mattrglobal/jsonld-signatures-bbs/unstable)
-![push-master](https://github.com/mattrglobal/jsonld-signatures-bbs/workflows/push-master/badge.svg)
-![push-release](https://github.com/mattrglobal/jsonld-signatures-bbs/workflows/push-release/badge.svg)
-![codecov](https://codecov.io/gh/mattrglobal/jsonld-signatures-bbs/branch/master/graph/badge.svg)
-
-The following repository contains a [linked data proof](https://w3c-ccg.github.io/ld-proofs/) implementation for creating [BBS+ Signatures](https://github.com/mattrglobal/bbs-signatures-spec)
-using [BLS12-381](https://tools.ietf.org/id/draft-yonezawa-pairing-friendly-curves-00.html#rfc.section.2.4) key pairs.
-
-Due to the properties of a [BBS+ Signatures](https://github.com/mattrglobal/bbs-signatures-spec), [zero knowledge proof](https://en.wikipedia.org/wiki/Zero-knowledge_proof) can be derived from the signature, where-by the party generating the proof can elect to selectively disclose statements from the originally signed payload.
-
-This library is runnable in browser and Node.js through the [WASM](https://webassembly.org/) based crypto implementation provided by [bbs-signatures](https://github.com/mattrglobal/bbs-signatures). Note [bbs-signatures](https://github.com/mattrglobal/bbs-signatures) also has an optional dependency on [node-bbs-signatures](https://github.com/mattrglobal/node-bbs-signatures) which can be used when running in [Node.JS](https://nodejs.org/en/) environments to obtain better performance. For environments that do not feature [WASM](https://webassembly.org/) support such as [react native](https://reactnative.dev/), [bbs-signatures](https://github.com/mattrglobal/bbs-signatures) includes an automatic roll back to an [asm.js](http://asmjs.org/) version but note however the performance difference between [asm.js](http://asmjs.org/) and [WASM](https://webassembly.org/) is significant, for those inclined there are runnable benchmarks in [bbs-signatures](https://github.com/mattrglobal/bbs-signatures).
+fork from mattr global's library.
+Do not use this repository as it is for experimental purposes.
 
 ## Getting started
 

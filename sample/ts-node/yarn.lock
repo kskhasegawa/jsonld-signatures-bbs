@@ -2,26 +2,19 @@
 # yarn lockfile v1
 
 
-"@kskhasegawa/bbs-signatures@0.2.13":
-  version "0.2.13"
-  resolved "https://registry.yarnpkg.com/@kskhasegawa/bbs-signatures/-/bbs-signatures-0.2.13.tgz#b8d86adf5d2e3a8a835cfcbf9dc0ffebdb721bc7"
-  integrity sha512-7tW9KvoXkx4Qf4qfJvWKYQd0+cpBuiYea6CacVyZlJWSoqj2eIbUUtXD0Z9pM9m5ekEoG0ALDuXAzNe6ZF7j+Q==
+"@kskhasegawa/bbs-signatures@0.2.15":
+  version "0.2.15"
+  resolved "https://registry.yarnpkg.com/@kskhasegawa/bbs-signatures/-/bbs-signatures-0.2.15.tgz#ed9dd2477ef7a5bedf6b2c8ff5071ab79271256b"
+  integrity sha512-xjsPFHOiOeP3KYv6OKo8bXHW580qBs4W0CQ8aycKl6UXQimIkU5+hg36cQAg7zLuAoejaSG4t2E4Lwk38YKDpQ==
   dependencies:
     "@stablelib/random" "1.0.2"
 
-"@kskhasegawa/bbs-signatures@1.0.0":
-  version "0.2.14"
-  resolved "https://registry.yarnpkg.com/@kskhasegawa/bbs-signatures/-/bbs-signatures-0.2.14.tgz#4581013da19759fc264caaa5e59fc60f13e0c0a0"
-  integrity sha512-oVgEPkfrKBP2YVO1JfvLLaNNtQbDhHdAzhfcMZrz7pIE+zTwnU8cC7QRBnb3/qmqGCRoPAZW4a3w25ALEkG5sw==
+"@kskhasegawa/bls12381-key-pair@0.0.13":
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/@kskhasegawa/bls12381-key-pair/-/bls12381-key-pair-0.0.13.tgz#1d2cff43324c09759751a2ed3bbdc76fb88185a9"
+  integrity sha512-O4EM+5TDrdLLWLgb9LM9BucH7ZEyCYg7zjmEo9/DtlEay1SXAAqZxruVPcI8vb1usBpe12SUPBQVD52+j1Jlew==
   dependencies:
-    "@stablelib/random" "1.0.2"
-
-"@kskhasegawa/bls12381-key-pair@0.0.12":
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@kskhasegawa/bls12381-key-pair/-/bls12381-key-pair-0.0.12.tgz#e4252fd07f3b9ffdfebe56e4ef977e26fdab70ba"
-  integrity sha512-FEZO+03ZKudKAP+tztBTsY3+tWVH5g64mBmqeto4Acm6qyHPVQCkRX9UczKBsx4yOPx/4Z795TGDqoH/NPnk6A==
-  dependencies:
-    "@kskhasegawa/bbs-signatures" "1.0.0"
+    "@kskhasegawa/bbs-signatures" "0.2.15"
     bs58 "4.0.1"
     rfc4648 "1.4.0"
 

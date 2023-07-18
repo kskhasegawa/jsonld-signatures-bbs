@@ -101,27 +101,23 @@ const main = async (): Promise<void> => {
   );
   //derivedProof[0]: proof document
   //derivedProof[1]: challenge hash
-  //derivedProof[2]: hidden message hash
-  //derivedProof[3]: plain hidden message
-  //derivedProof[4]: blinding factors
-  //derivedProof[5]: correct commitments
+  //derivedProof[2]: plain hidden message
+  //derivedProof[3]: blinding factors
+  //derivedProof[4]: correct commitments
   console.log("proof document is--------------------------------");
   console.log(derivedProof[0]);
   console.log("--------------------------------");
   console.log("challenge hash is--------------------------------");
   console.log(derivedProof[1]);
   console.log("--------------------------------");
-  console.log("plain hidden message is--------------------------------");
-  console.log(derivedProof[2].toString());
-  console.log("--------------------------------");
   console.log("hidden message hash to fr is--------------------------------");
-  console.log(derivedProof[3]);
+  console.log(derivedProof[2]);
   console.log("--------------------------------");
   console.log("blinding factor is--------------------------------");
-  console.log(derivedProof[4]);
+  console.log(derivedProof[3]);
   console.log("--------------------------------");
   console.log("correct commitment is--------------------------------");
-  console.log(derivedProof[5]);
+  console.log(derivedProof[4]);
   console.log("--------------------------------");
 
   //Verify the derived proof
