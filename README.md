@@ -1,4 +1,4 @@
-fork from mattr global's library.
+fork from mattr global's library.  
 Do not use this repository as it is for experimental purposes.
 
 ## Getting started
@@ -6,13 +6,13 @@ Do not use this repository as it is for experimental purposes.
 To use this package within your project simply run
 
 ```
-npm install @mattrglobal/jsonld-signatures-bbs
+npm install @kskhasegawa/jsonld-signatures-bbs
 ```
 
 Or with [Yarn](https://yarnpkg.com/)
 
 ```
-yarn add @mattrglobal/jsonld-signatures-bbs
+yarn add @kskhasegawa/jsonld-signatures-bbs
 ```
 
 ## Sample
@@ -153,11 +153,3 @@ To run the test in the project run:
 ```
 yarn test
 ```
-
-## Security Policy
-
-Please see our [security policy](./SECURITY.md) for additional details about responsible disclosure of security related issues.
-
----
-
-<p align="center"><a href="https://mattr.global" target="_blank"><img height="40px" src ="./docs/assets/mattr-logo-tm.svg"></a></p><p align="center">Copyright © MATTR Limited. <a href="./LICENSE">Some rights reserved.</a><br/>“MATTR” is a trademark of MATTR Limited, registered in New Zealand and other countries.</p>
