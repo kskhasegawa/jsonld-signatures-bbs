@@ -105,11 +105,14 @@ const main = async (): Promise<void> => {
   //derivedProof[3]: plain hidden message
   //derivedProof[4]: blinding factors
   //derivedProof[5]: correct commitments
+  console.log("proof document is--------------------------------");
+  console.log(derivedProof[0]);
+  console.log("--------------------------------");
   console.log("challenge hash is--------------------------------");
   console.log(derivedProof[1]);
   console.log("--------------------------------");
   console.log("plain hidden message is--------------------------------");
-  console.log(derivedProof[2]);
+  console.log(derivedProof[2].toString());
   console.log("--------------------------------");
   console.log("hidden message hash to fr is--------------------------------");
   console.log(derivedProof[3]);

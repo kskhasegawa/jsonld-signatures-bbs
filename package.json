@@ -1,6 +1,6 @@
 {
   "name": "@kskhasegawa/jsonld-signatures-bbs",
-  "version": "1.1.231",
+  "version": "1.1.232",
   "description": "A JSON-LD linked data proof suite for creating and verifying BBS+ signatures and proofs",
   "homepage": "https://github.com/kskhasegawa/jsonld-signatures-bbs",
   "author": {
@@ -71,7 +71,7 @@
     "typescript": "4.3.3"
   },
   "dependencies": {
-    "@kskhasegawa/bbs-signatures": "0.2.11",
+    "@kskhasegawa/bbs-signatures": "0.2.15",
     "@kskhasegawa/bls12381-key-pair": "0.0.12",
     "@stablelib/random": "1.0.0",
     "bs58": "4.0.1",

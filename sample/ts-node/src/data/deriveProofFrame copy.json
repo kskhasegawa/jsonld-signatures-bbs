@@ -7,6 +7,15 @@
   "type": ["VerifiableCredential", "PermanentResidentCard"],
   "credentialSubject": {
     "@explicit": true,
-    "type": ["PermanentResident", "Person"]
+    "type": ["PermanentResident", "Person"],
+    "givenName": {},
+    "familyName": {},
+    "gender": {},
+    "image": {},
+    "residentSince": {},
+    "lprCategory": {},
+    "lprNumber": {},
+    "commuterClassification": {},
+    "birthCountry": {}
   }
 }
