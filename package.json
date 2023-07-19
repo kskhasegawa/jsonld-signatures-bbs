@@ -1,23 +1,15 @@
 {
   "name": "@kskhasegawa/jsonld-signatures-bbs",
-  "version": "1.1.3",
+  "version": "1.2",
   "description": "A JSON-LD linked data proof suite for creating and verifying BBS+ signatures and proofs",
   "homepage": "https://github.com/kskhasegawa/jsonld-signatures-bbs",
   "author": {
-    "name": "kskhasegaw",
+    "name": "kskhasegawa",
     "email": "keisu-hasegawa@secom.co.jp"
   },
-  "contributors": [
-    "Tobias Looker",
-    "Mike Lodder"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kskhasegawa/jsonld-signatures-bbs.git"
-  },
-  "bugs": {
-    "url": "https://github.com/kskhasegawa/jsonld-signatures-bbs/issues",
-    "email": "keisu-hasegawa@secom.co.jp"
   },
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",

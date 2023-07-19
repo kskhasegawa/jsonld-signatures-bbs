@@ -1,4 +1,4 @@
-fork from mattr global's library.  
+Fork from [mattrglobal's library](https://github.com/mattrglobal/jsonld-signatures-bbs).  
 Do not use this repository as it is for experimental purposes.
 
 ## Getting started
